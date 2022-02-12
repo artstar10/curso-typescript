@@ -11,13 +11,13 @@ let str2: string= "uma  mensagem";
 let str3: string= `${str2} to artstar10`;
 console.log(str3);
 function func():void{}
-if(bool != null){}
-if(bool != undefined){}
+if(bool !== null){}
+if(bool !== undefined){}
 
 if(bool){
     let i:number;
     for(i = 0; i < 3; i++){
-        console.log(i);
+        // console.log(i);
     }
 }
 // console.log("value of " +i);
@@ -31,5 +31,26 @@ console.log(tuple[0].toLocaleLowerCase());
 // console.log(tuple[1]);
 enum Day{MONDAY, TUESDAY, WEDNESDAY} // Enumerações serve para trabalhar com valores/posicoes utilizando numeros
 let day: Day = Day.MONDAY;
-console.log(`day: ${day} ${Day.TUESDAY} ${Day.WEDNESDAY}` ); // SAÍDA: ENUM
-console.log(`day: ${Day[0]} | ${Day[1]} | ${Day[2]}` );
+// console.log(`day: ${day} ${Day.TUESDAY} ${Day.WEDNESDAY}` ); // SAÍDA: ENUM
+// console.log(`day: ${Day[0]} | ${Day[1]} | ${Day[2]}` );
+
+// console.log(true === 1);
+
+// function add(v1:number,v2:number,v3?:number): number{//não é obrigatório passar v3? no parâmetro pois ele é opcional
+//     if(v3 !== undefined)
+//     return v1+v2+v3;
+//     return v1+v2;
+// }
+
+function add(v1:any,v2:any,v3?:any): any{//não é obrigatório passar v3? no parâmetro pois ele é opcional
+    if(v3 !== undefined)
+    return v1+v2+v3;
+    return v1+v2;
+}
+
+console.log(`add ${add(1,2)}`);
+console.log(`add ${add('1',2)}`);
+
+let var1: any = 'valor desconhecido a ser enviado pelo usuário';
+
+// let example: number = undefined;

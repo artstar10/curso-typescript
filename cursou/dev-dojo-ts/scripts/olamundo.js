@@ -10,12 +10,12 @@ var str2 = "uma  mensagem";
 var str3 = "".concat(str2, " to artstar10");
 console.log(str3);
 function func() { }
-if (bool != null) { }
-if (bool != undefined) { }
+if (bool !== null) { }
+if (bool !== undefined) { }
 if (bool) {
     var i = void 0;
     for (i = 0; i < 3; i++) {
-        console.log(i);
+        // console.log(i);
     }
 }
 // console.log("value of " +i);
@@ -31,7 +31,20 @@ var Day;
     Day[Day["MONDAY"] = 0] = "MONDAY";
     Day[Day["TUESDAY"] = 1] = "TUESDAY";
     Day[Day["WEDNESDAY"] = 2] = "WEDNESDAY";
-})(Day || (Day = {})); // Enumerações serve para trabalhar com valores/posicoes utilizandfo numeros
+})(Day || (Day = {})); // Enumerações serve para trabalhar com valores/posicoes utilizando numeros
 var day = Day.MONDAY;
-console.log("day: ".concat(day, " ").concat(Day.TUESDAY, " ").concat(Day.WEDNESDAY)); // SAÍDA: ENUM
-console.log("day: ".concat(Day[0], " | ").concat(Day[1], " | ").concat(Day[2]));
+// console.log(`day: ${day} ${Day.TUESDAY} ${Day.WEDNESDAY}` ); // SAÍDA: ENUM
+// console.log(`day: ${Day[0]} | ${Day[1]} | ${Day[2]}` );
+// console.log(true === 1);
+// function add(v1:number,v2:number,v3?:number): number{//não é obrigatório passar v3? no parâmetro pois ele é opcional
+//     if(v3 !== undefined)
+//     return v1+v2+v3;
+//     return v1+v2;
+// }
+function add(v1, v2, v3) {
+    if (v3 !== undefined)
+        return v1 + v2 + v3;
+    return v1 + v2;
+}
+console.log("add ".concat(add(1, 2)));
+console.log("add ".concat(add('1', 2)));

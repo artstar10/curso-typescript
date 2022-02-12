@@ -7,4 +7,5 @@ TypeScript é uma ferramenta interessante para os profissionais que trabalham co
 TypeScript – Aprendendo Junto 01 – O que é - done
 TypeScript - Aprendendo Junto 02 - Configuração da IDE e Ola Mundo - done
 TypeScript - Aprendendo Junto 03 - Tipos de variáveis pt 01 - done
+TypeScript - Aprendendo Junto 04 - Tipos de variáveis pt 02 - done
 fonte do curso: (httpswww.cursou.com.brinformaticaprogramacaotypescript)
