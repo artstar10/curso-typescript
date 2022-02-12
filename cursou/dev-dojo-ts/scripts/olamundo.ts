@@ -29,7 +29,7 @@ let tuple:[string,number];
 tuple = ['arthur', 22];
 console.log(tuple[0].toLocaleLowerCase());
 // console.log(tuple[1]);
-enum Day{MONDAY, TUESDAY, WEDNESDAY} // Enumerações serve para trabalhar com valores/posicoes utilizandfo numeros
+enum Day{MONDAY, TUESDAY, WEDNESDAY} // Enumerações serve para trabalhar com valores/posicoes utilizando numeros
 let day: Day = Day.MONDAY;
 console.log(`day: ${day} ${Day.TUESDAY} ${Day.WEDNESDAY}` ); // SAÍDA: ENUM
 console.log(`day: ${Day[0]} | ${Day[1]} | ${Day[2]}` );
