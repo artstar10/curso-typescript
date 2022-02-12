@@ -4,4 +4,6 @@ TypeScript é uma ferramenta interessante para os profissionais que trabalham co
 
 
 
+
+
 fonte do curso: (httpswww.cursou.com.brinformaticaprogramacaotypescript)
